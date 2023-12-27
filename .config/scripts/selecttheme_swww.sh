@@ -3,3 +3,4 @@
         wal -i $selectedFile -n;
         swww img $selectedFile
         cp $selectedFile ~/.cache/wal/temp.jpg
+        pkill waybar; waybar &

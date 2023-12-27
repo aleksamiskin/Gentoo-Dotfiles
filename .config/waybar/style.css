@@ -1,3 +1,4 @@
+@import "/home/yamato/.cache/wal/colors-waybar.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Roboto, Helvetica, Arial, sans-serif,'Font Awesome 5 Free';
@@ -6,8 +7,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: @color0;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -46,22 +46,25 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px @color1;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: @color2;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    background: @color4;
+    color: @color0;
 }
 
 #workspaces button.active{
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: transparent;
+    color: @color1;
+    box-shadow: inset 0 -3px @color1;
 }
 
 #workspaces button.urgent {
@@ -109,7 +112,8 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: transparent;
+    color: @color2;
 }
 
 #battery {
@@ -144,13 +148,13 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: transparent;
+    color: @color4;
 }
 
 #memory {
-    background-color: #9b59b6;
-    color: #000000
+    background-color: transparent;
+    color: @color3; 
 }
 
 #disk {
@@ -162,7 +166,8 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: transparent;
+    color: @color1;
 }
 
 #network.disconnected {
@@ -211,7 +216,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: transparent;
 }
 
 #tray > .passive {

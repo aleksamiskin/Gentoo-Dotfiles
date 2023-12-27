@@ -1,11 +1,13 @@
+@import "/home/yamato/.cache/wal/colors-waybar.css";
+
 * {
   font-family: FiraCode Nerd Font Mono;
-  color: --wofi-color0;
+  color: @color1;
 }
 
 window {
-  background-color: #2e3440;
-  border: 2px solid #88c0d0;
+  background-color: rgba(0.4,0.4,0.4,0.6);
+  border: 2px solid @color1;
   border-radius: 15px;
 }
 
@@ -15,13 +17,13 @@ window {
 
 #input {
   border: none;
-  background-color: #2e3440;
+  background-color: transparent;
   margin: 7px;
   box-shadow: none; /* Remove blue "border" */
 }
 
 #inner-box {
-  background-color: #2e3440;
+  background-color: transparent;
   margin: 7px;
   margin-top: 0;
 }
@@ -35,7 +37,7 @@ window {
 }
 
 #entry:selected {
-  background-color: #44475a;
+  background-color: @color0;
 }
 
 #text {
