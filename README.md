@@ -1,1 +1,1 @@
-# Gentoo-Dotfiles-v1
+# Gentoo-Dotfiles
