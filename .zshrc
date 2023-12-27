@@ -109,6 +109,7 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
+alias dots="clear; cd Gentoo-Dotfiles"
 
 (cat ~/.cache/wal/sequences &)
 
