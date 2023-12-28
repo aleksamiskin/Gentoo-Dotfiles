@@ -204,7 +204,7 @@ require('lazy').setup({
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
+        icons_enabled = true,
         theme = 'onedark',
         component_separators = '|',
         section_separators = '',
@@ -273,6 +273,22 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+vim.o.number = true
+vim.o.relativenumber = true
+
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = 4
+
+vim.o.smartindent = true
+vim.o.wrap = false
+
+vim.o.hlsearch = false
+vim.o.incsearch = true
+vim.o.scrolloff = 8
+vim.o.signcolumn = "yes"
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
@@ -301,7 +317,7 @@ vim.o.smartcase = true
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 250
+vim.o.updatetime = 50
 vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
@@ -656,6 +672,13 @@ cmp.setup {
     { name = 'path' },
   },
 }
+
+function Transparency(color)
+  color = color or "onedark"
+  vim.cmd.colorscheme(color)
+  vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
+  vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"})
+end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
