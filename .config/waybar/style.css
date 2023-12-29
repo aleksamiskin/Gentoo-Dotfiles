@@ -1,8 +1,8 @@
 @import "/home/yamato/.cache/wal/colors-waybar.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Roboto, Helvetica, Arial, sans-serif,'Font Awesome 5 Free';
-    font-size: 15px;
+    font-family: JetBrainsMono Nerd Font, Roboto, Helvetica, Arial, sans-serif,'Font Awesome 5 Free';
+    font-size: 18px;
     min-height: 0;
 }
 

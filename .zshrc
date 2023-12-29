@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lsd="lsd -lAh"
 alias open_backup="cd /mnt/Data1/Yamato/Arch/yamato; lsd -lA"
-alias make="clear; make; ./out"
+alias make="clear; make; ./main"
 
 # Git aliases
 alias gs="git status"
