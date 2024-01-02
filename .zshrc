@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,6 +104,7 @@ alias lsd="lsd -lAh"
 alias open_backup="cd /mnt/Data1/Yamato/Arch/yamato; lsd -lA"
 alias make="clear; make; ./main"
 alias nc="ncmpcpp"
+alias autosuggestions="nvim /home/yamato/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # Git aliases
 alias gs="git status"
