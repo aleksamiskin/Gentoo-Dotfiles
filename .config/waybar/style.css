@@ -169,7 +169,7 @@ label:focus {
 
 #network {
     background-color: transparent;
-    color: @color1;
+    color: @color3;
 }
 
 #network.disconnected {
@@ -241,7 +241,7 @@ label:focus {
 
 #mpd {
     background-color: transparent;
-    color: #2a5c45;
+    color: @color4;
 }
 
 #mpd.disconnected {
