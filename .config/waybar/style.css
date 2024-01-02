@@ -1,7 +1,7 @@
 @import "/home/yamato/.cache/wal/colors-waybar.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: JetBrainsMono Nerd Font, Roboto, Helvetica, Arial, sans-serif,'Font Awesome 5 Free';
+    font-family:  JetBrainsMono Nerd Font;
     font-size: 18px;
     min-height: 0;
 }
@@ -50,7 +50,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0px 10px 0px 3px;
     background-color: transparent;
     color: @color2;
 }
@@ -240,7 +240,7 @@ label:focus {
 }
 
 #mpd {
-    background-color: #66cc99;
+    background-color: transparent;
     color: #2a5c45;
 }
 
@@ -249,11 +249,11 @@ label:focus {
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+    background-color: transparent;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+    background-color: transparent;
 }
 
 #language {

@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"/*,  "custom/media"*/],
     "modules-center": ["hyprland/window"],
-    "modules-right": [/*"mpd", "idle_inhibitor", "pulseaudio", "wireplumber", */ "network#enp", /*"network#wlan",*/ "cpu", "memory", /*"temperature", */ /*"keyboard-state", "hyprland/language",*/ "clock", "tray"],
+    "modules-right": ["mpd",/* "idle_inhibitor", "pulseaudio", "wireplumber", */ "network#enp", /*"network#wlan",*/ "cpu", "memory", /*"temperature", */ /*"keyboard-state", "hyprland/language",*/ "clock", "tray"],
     
     // Modules configuration
      "hyprland/workspaces": {
@@ -46,11 +46,11 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) {volume}% ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "unknown-tag": "N/A",
-        "interval": 2,
+        "interval": 1,
         "consume-icons": {
             "on": " "
         },

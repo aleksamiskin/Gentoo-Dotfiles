@@ -1,4 +1,4 @@
 ncmpcpp_directory =         "~/.ncmpcpp"
 mpd_host =                  "localhost"
-mpd_port =                  "6623"
+mpd_port =                  "6600"
 mpd_music_dir =	            "/mnt/Data1/Yamato/Win/Music"
