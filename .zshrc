@@ -121,6 +121,13 @@ alias dots="clear; cd Gentoo-Dotfiles"
 # To add support for TTYs this line can be optionally added.
 # source ~/.cache/wal/colors-tty.sh
 
+# Set QT theme
+export QT_STYLE_OVERRIDE=adwaita-dark
+
+# Set GTK theme
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
 # Run hyprland on tty login
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
     dbus-run-session Hyprland
