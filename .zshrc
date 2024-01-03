@@ -4,6 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="${PATH}:${HOME}/.local/bin/"
+export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -121,7 +122,7 @@ alias dots="clear; cd Gentoo-Dotfiles"
 # cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
-# source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors-tty.sh
 
 # Set QT theme
 export QT_STYLE_OVERRIDE=adwaita-dark

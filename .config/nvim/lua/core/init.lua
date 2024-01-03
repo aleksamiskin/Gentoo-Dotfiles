@@ -11,16 +11,17 @@ g.transparency = config.ui.transparency
 -------------------------------------- options ------------------------------------------
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
+opt.scrolloff = 8
 
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 2
+opt.shiftwidth = 4
 opt.smartindent = true
-opt.tabstop = 2
-opt.softtabstop = 2
+opt.tabstop = 4
+opt.softtabstop = 4
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
@@ -29,7 +30,7 @@ opt.mouse = "a"
 
 -- Numbers
 opt.number = true
-opt.numberwidth = 2
+opt.numberwidth = 1
 opt.ruler = false
 
 -- disable nvim intro
