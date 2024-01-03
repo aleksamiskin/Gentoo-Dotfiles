@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"/*,  "custom/media"*/],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["mpd",/* "idle_inhibitor", "pulseaudio", "wireplumber", */ "network#enp", /*"network#wlan",*/ "cpu", "memory", /*"temperature", */ /*"keyboard-state", "hyprland/language",*/ "clock", "tray"],
+    "modules-right": ["mpd",/* "idle_inhibitor", "pulseaudio", "wireplumber",*/ "network#enp", /*"network#wlan",*/ "cpu", "memory", /* "temperature", "keyboard-state", "hyprland/language",*/ "clock", "tray"],
     
     // Modules configuration
      "hyprland/workspaces": {
@@ -18,7 +18,7 @@
          "format-icons": {
              "1": "",
              "2": "",
-	     "3": "",
+	           "3": "",
              "4": "",
              "5": "",
              "urgent": "",
@@ -50,12 +50,12 @@
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "unknown-tag": "N/A",
-        "interval": 1,
+        "interval": 2,
         "consume-icons": {
             "on": " "
         },
         "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
+            /*"off": "<span color=\"#f53c3c\"></span> ",*/
             "on": " "
         },
         "repeat-icons": {
@@ -79,7 +79,6 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
@@ -126,7 +125,6 @@
     },
     "network#enp": {
         "interface": "enp*", // (Optional) To force the use of this interface
-        //"format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "format-disconnected": "Disconnected ⚠",
 	"interval":10

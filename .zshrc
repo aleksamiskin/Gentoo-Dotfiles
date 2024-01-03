@@ -105,6 +105,8 @@ alias open_backup="cd /mnt/Data1/Yamato/Arch/yamato; lsd -lA"
 alias make="clear; make; ./main"
 alias nc="ncmpcpp"
 alias autosuggestions="nvim /home/yamato/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+alias n="nvim"
+alias neofetch="clear; neofetch"
 
 # Git aliases
 alias gs="git status"
